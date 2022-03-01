@@ -15,7 +15,7 @@ const colors = [
 
 function Center() {
     const { data: session } = useSession();
-    const [color, setColor] = useState(null);
+    const [ color, setColor ] = useState(null);
     useEffect(() => {
         setColor(shuffle(colors).pop());
 
@@ -27,7 +27,7 @@ function Center() {
                 <div className="flex items-center bg-red-300 space-x-3 opacity-90 hover:opacity-80 cursor-pointer rounded-full p-1 pr-2">
                     <img
                      className="rounded-full w-10 h-10"
-                     src={session?.user?.image as any} 
+                     src={session?.user?.image} 
                      alt="" 
                     />
                     <h2>{session?.user.name}</h2>
