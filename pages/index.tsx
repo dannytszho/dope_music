@@ -10,7 +10,7 @@ const Home: NextPage = () => {
   return (
     <div className="bg-black h-screen overflow-hidden">
       <Head>
-        <title>Spotify 2.0</title>
+        <title>Dope Music</title>
       </Head>
 
       <main className='flex'>
